@@ -1,16 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap");
 
 :root {
   --youtube: #ff0000;
   --twitter: #1da1f2;
   --linkedin: #0077b5;
+  --bilibili: #f88dad;
+  --weibo: #f2da76;
 }
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .links {
   display: flex;
@@ -18,16 +29,17 @@
   margin: auto;
   width: 500px;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .link {
   background-color: black;
   padding: 15px 0px;
-  margin: 3px 0px;
+  margin: 2px 0px;
   text-align: center;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 700;
   font-size: 40px;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 a {
   text-decoration: none;
@@ -42,8 +54,15 @@ a {
 .linkedin {
   background-color: var(--linkedin);
 }
-.fab {
-  margin-right: 10px;
+.bilibili {
+  background-color: var(--bilibili);
+}
+.weibo {
+  background-color: var(--weibo);
+}
+.fab,
+.fas {
+  margin-right: 20px;
 }
 h1 {
   font-family: "Barlow Semi Condensed", sans-serif;
@@ -58,7 +77,20 @@ h2 {
   margin-bottom: 20px;
 }
 iframe {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+footer {
+  text-align: center;
+  background-color: #1a1d20;
+  padding: 30px;
+  margin-top: 50px;
+  color: aliceblue;
+  width: 100%;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+.logo {
+  width: 12%;
+  margin-top: 50px;
 }
 
 @media only screen and (max-device-width: 414px) {
